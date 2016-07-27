@@ -1,51 +1,64 @@
 body{
-
-	background: rgb(2,51,30);  
-
+	background-color: rgb(12,34,20);
 }
-.styleCal{
-
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-left: 40px;
-	background-color: gray;
-	border: 20px solid;
-	border-radius: 200px;
-	margin: 10% auto;
-	width: 300px;
-	height: 590px;
-
-}
-.equal{
-	margin-left: 100px;
-	margin-top: -5px;
-
+.body{
+	margin-left: 30%;
+	height: 400px;
+	width: 350px;
+	background-color:gray ;
+	border-color: black;
+	border:solid 3px;
+	border-radius: 20px;
 }
 
-#result{
-	border-radius:10px; 
-	border: 5px solid;
-	margin-top: 55px; 
-	margin-left: 10px;
-	background-color: white;
-	width: 200px;
-	height: 90px;
+#result{ 
+font-size: 40px;
+text-align: right;
+margin-top: 4%;
+margin-left: 45px;
+height: 60px;
+width: 200px;
+background-color: white;
+border: solid 4px;
+border-color: black;
+border-radius: 10px;
 }
-.buttonC{
-	border-radius: 200px;
-	width: 60px;
-	height: 70px;
-	margin-left: 210px;
-	margin-top: 10px;
-}
-button{
-	font-family: "Bernard MT Condensed";
+
+.button{
 	font-size: 40px;
-	margin-top: 10px;
-	border-radius: 100px;
-	padding-top: 5px;
-	width: 90px;
-	height: 60px;
-	border: 5px solid;
-	color: black; 
+	width: 70px;
+	height: 50px;
+	margin-left: 10px;	
+	margin-top: 15px;
+	background-color: green;
+	border: solid 5px;
+	text-align: center;
+	border-radius: 10px; 
+}
+.button1{
+	font-size: 40px;
+	width: 70px;
+	height: 50px;
+	margin-left: 10px;	
+	margin-top: 15px;
+	background-color: yellow;
+	border: solid 5px;
+	text-align: center;
+	border-radius: 10px; 
+}
+.button2{
+	font-size: 40px;
+	width: 70px;
+	height: 50px;
+	margin-left: 270px;	
+	margin-top:-6%;
+	position: absolute;
+	background-color: green;
+	border: solid 5px;
+	text-align: center;
+	border-radius: 10px; 
+}
+#clear:hover{
+	background background-color: black;
+	color:gray; 
 }
