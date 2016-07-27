@@ -1,138 +1,60 @@
-var firstnum;
-var secondnum;
-var answer;
-var operation;
-var click=1;
-function plus(){
-	operation = '+';
-}
 
-function menus(){
-	operation = '-';
-};
-function multiply(){
-	operation = '*';
-};
-function divid(){
-	operation = '/';
-};
+var fnum,snum,operator,answer;
+var click=0;
+//numbers
+
+function point(){
+		document.getElementById('result').innerHTML+='.';
+}
 function n1(){
-	if(click==1){
-	firstnum = 1;
-	click++;	
-}
-	if (click==2) {
-
-		secondnum = 1;
-	}
-};
+		document.getElementById('result').innerHTML+=1;
+		}
 function n2(){
-	if(click==1){
-	firstnum = 2;
-	click++;	
+		document.getElementById('result').innerHTML+=2;
 }
-	if (click==2) {
-
-		secondnum = 2;
-	}
-};
 function n3(){
-	if(click==1){
-	firstnum = 3;
-	click++;	
+		document.getElementById('result').innerHTML+=3;
 }
-	if (click==2) {
-
-		secondnum = 3;
-	}
-};
 function n4(){
-	if(click==1){
-	firstnum = 4;
-	click++;	
+		document.getElementById('result').innerHTML+=4;
 }
-	if (click==2) {
-
-		secondnum = 4;
-	}
-};
 function n5(){
-	if(click==1){
-	firstnum = 5;
-	click++;	
+		document.getElementById('result').innerHTML+=5;
 }
-	if (click==2) {
-
-		secondnum = 5;
-	}
-};
 function n6(){
-	if(click==1){
-	firstnum = 6;
-	click++;	
+		document.getElementById('result').innerHTML+=6;
 }
-	if (click==2) {
-
-		secondnum = 6;
-	}
-};
 function n7(){
-	if(click==1){
-	firstnum = 7;
-	click++;	
+		document.getElementById('result').innerHTML+=7;
 }
-	if (click==2) {
-
-		secondnum = 7;
-	}
-};
 function n8(){
-	if(click==1){
-	firstnum = 8;
-	click++;	
+		document.getElementById('result').innerHTML+=8;
 }
-	if (click==2) {
-
-		secondnum = 8;
-	}
-};
 function n9(){
-	if(click==1){
-	firstnum = 9;
-	click++;	
+		document.getElementById('result').innerHTML+=9;
 }
-	if (click==2) {
-
-		secondnum = 9;
-	}
-};
 function n0(){
-	if(click==1){
-	firstnum = 0;
-	click++;	
+		document.getElementById('result').innerHTML+=0;
 }
-	if (click==2) {
-
-		secondnum = 0;
-	}
+function plus(){
+		document.getElementById('result').innerHTML+='+';
 }
-
-function equals(){
-	if(operation='+'){
-		answer = firstnum + secondnum;
-		ducument.getElementById('display').innerHTML = answer;
-	}
-	if(operation='-'){
-		answer = firstnum - secondnum;
-		ducument.getElementById('display').innerHTML = answer;
-	}
-	if(operation='*'){
-		answer = firstnum * secondnum;
-		ducument.getElementById('display').innerHTML = answer;
-	}
-	if(operation='/'){
-		answer = firstnum / secondnum;
-		ducument.getElementById('display').innerHTML = answer;
-	}
-
-};
+function minus(){
+		document.getElementById('result').innerHTML+='-';
+}
+function divid(){
+		document.getElementById('result').innerHTML+='/';
+}
+function multiply(){
+		document.getElementById('result').innerHTML+='*';
+}
+function c(){
+		document.getElementById('result').innerHTML=(" ");
+}
+function del(){
+		document.getElementById('result').innerHTML=result-1;
+}
+function equal(){
+	var eq= eval(document.getElementById('result').innerHTML)
+	result.innerHTML=eq;
+}
